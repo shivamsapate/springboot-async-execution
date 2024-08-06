@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 
     @Autowired
-    AsyncService asyncService;
+    private AsyncService asyncService;
 
     @GetMapping("/async")
     public ResponseEntity<String> asyncExecution() throws InterruptedException {
